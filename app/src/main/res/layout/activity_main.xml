@@ -9,24 +9,24 @@
         android:id="@+id/buttonCreate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Luo Lutemon" />
+        android:text="Create Lutemon" />
 
     <Button
         android:id="@+id/buttonList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Listaa Lutemonit" />
+        android:text="List Lutemons" />
 
     <Button
         android:id="@+id/buttonTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Harjoittele" />
+        android:text="Train" />
 
     <Button
         android:id="@+id/buttonBattle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Taistele" />
+        android:text="Battle" />
 
 </LinearLayout>
