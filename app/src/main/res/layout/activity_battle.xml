@@ -4,16 +4,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose two fighters!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
     <Spinner
         android:id="@+id/spinnerFirst"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
 
     <Spinner
         android:id="@+id/spinnerSecond"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/buttonFight"

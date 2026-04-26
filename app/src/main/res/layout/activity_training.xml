@@ -4,11 +4,31 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Lutemon to train"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Train your Lutemons to get experience"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
     <Spinner
         android:id="@+id/spinnerLutemon"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/buttonTrain"
