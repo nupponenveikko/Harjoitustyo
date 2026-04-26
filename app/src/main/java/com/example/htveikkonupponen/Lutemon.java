@@ -79,13 +79,6 @@ public abstract class Lutemon {
     public String getName() { return name; }
     public String getColor() { return color; }
     public String getLocation() { return location; }
-    public int getHealth() { return health; }
-    public int getMaxHealth() { return maxHealth; }
-    public int getExperience() { return experience; }
-    public int getWins() { return wins; }
-    public int getBattles() { return battles; }
-    public int getTrainings() { return trainings; }
-
     public void setLocation(String location) {
         this.location = location;
     }

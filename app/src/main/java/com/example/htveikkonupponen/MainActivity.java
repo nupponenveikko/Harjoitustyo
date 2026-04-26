@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonCreate, buttonList, buttonTraining, buttonBattle;
+    Button buttonCreate, buttonList, buttonMove, buttonTraining, buttonBattle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonCreate = findViewById(R.id.buttonCreate);
         buttonList = findViewById(R.id.buttonList);
+        buttonMove = findViewById(R.id.buttonMove);
         buttonTraining = findViewById(R.id.buttonTraining);
         buttonBattle = findViewById(R.id.buttonBattle);
 
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
         buttonList.setOnClickListener(v ->
                 startActivity(new Intent(this, ListLutemonsActivity.class)));
+
+        buttonMove.setOnClickListener(v ->
+                startActivity(new Intent(this, MoveLutemonActivity.class)));
 
         buttonTraining.setOnClickListener(v ->
                 startActivity(new Intent(this, TrainingActivity.class)));

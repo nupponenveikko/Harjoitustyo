@@ -28,7 +28,7 @@ public class TrainingActivity extends AppCompatActivity {
         buttonTrain = findViewById(R.id.buttonTrain);
         textViewTrainingResult = findViewById(R.id.textViewTrainingResult);
 
-        lutemons = Storage.getInstance().getAllLutemons();
+        lutemons = Storage.getInstance().getByLocation("Training");
 
         ArrayList<String> names = new ArrayList<>();
 
@@ -47,7 +47,7 @@ public class TrainingActivity extends AppCompatActivity {
 
         buttonTrain.setOnClickListener(v -> {
             if (lutemons.isEmpty()) {
-                Toast.makeText(this, "Luo Lutemoneja ensin", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Create Lutemons first", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -58,7 +58,7 @@ public class TrainingActivity extends AppCompatActivity {
             trainingArea.train(selected);
 
             textViewTrainingResult.setText(
-                    selected.getName() + " harjoitettu!\n\n" + selected.getStats()
+                    selected.getName() + " trained!\n\n" + selected.getStats()
             );
         });
     }

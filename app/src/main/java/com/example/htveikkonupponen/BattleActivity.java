@@ -29,7 +29,7 @@ public class BattleActivity extends AppCompatActivity {
         buttonFight = findViewById(R.id.buttonFight);
         textViewBattleResult = findViewById(R.id.textViewBattleResult);
 
-        lutemons = Storage.getInstance().getAllLutemons();
+        lutemons = Storage.getInstance().getByLocation("Battle");
 
         ArrayList<String> names = new ArrayList<>();
 

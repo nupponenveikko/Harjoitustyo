@@ -34,7 +34,7 @@ public class Storage {
         return new ArrayList<>(lutemons.values());
     }
 
-    public ArrayList<Lutemon> getLutemonsByLocation(String location) {
+    public ArrayList<Lutemon> getByLocation(String location) {
         ArrayList<Lutemon> result = new ArrayList<>();
 
         for (Lutemon lutemon : lutemons.values()) {

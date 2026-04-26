@@ -66,7 +66,7 @@ public class CreateLutemonActivity extends AppCompatActivity {
 
             Storage.getInstance().addLutemon(lutemon);
 
-            Toast.makeText(this, "Lutemon luotu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Lutemon created", Toast.LENGTH_SHORT).show();
             editTextName.setText("");
         });
     }

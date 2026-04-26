@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HTVeikkoNupponen">
         <activity
+            android:name=".MoveLutemonActivity"
+            android:exported="false" />
+        <activity
             android:name=".BattleActivity"
             android:exported="false" />
         <activity

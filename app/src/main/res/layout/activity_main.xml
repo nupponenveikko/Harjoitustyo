@@ -5,6 +5,17 @@
     android:orientation="vertical"
     android:padding="24dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Lutemon Game"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
     <Button
         android:id="@+id/buttonCreate"
         android:layout_width="match_parent"
@@ -15,18 +26,28 @@
         android:id="@+id/buttonList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="List Lutemons" />
+        android:text="List Lutemons"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/buttonMove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Move Lutemons"
+        android:layout_marginTop="12dp" />
 
     <Button
         android:id="@+id/buttonTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Train" />
+        android:text="Train"
+        android:layout_marginTop="12dp" />
 
     <Button
         android:id="@+id/buttonBattle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Battle" />
+        android:text="Battle"
+        android:layout_marginTop="12dp" />
 
 </LinearLayout>

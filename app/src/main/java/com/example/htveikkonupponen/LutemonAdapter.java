@@ -33,10 +33,7 @@ public class LutemonAdapter extends RecyclerView.Adapter<LutemonAdapter.LutemonV
         Lutemon lutemon = lutemons.get(position);
 
         holder.textViewLutemonInfo.setText(
-                "ID: " + lutemon.getId() + "\n" +
-                        lutemon.getStats() + "\n" +
-                        "Location: " + lutemon.getLocation()
-        );
+                "ID: " + lutemon.getId() + "\n" + lutemon.getStats() + "\n" + "Location: " + lutemon.getLocation());
 
         switch (lutemon.getColor()) {
             case "White":
