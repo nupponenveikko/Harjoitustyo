@@ -25,10 +25,6 @@ public class Storage {
         return lutemons.get(id);
     }
 
-    public void removeLutemon(int id) {
-        lutemons.remove(id);
-    }
-
     public ArrayList<Lutemon> getAllLutemons() {
         return new ArrayList<>(lutemons.values());
     }
