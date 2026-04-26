@@ -48,7 +48,7 @@ public class TrainingActivity extends AppCompatActivity {
 
         buttonTrain.setOnClickListener(v -> {
             if (lutemons.isEmpty()) {
-                Toast.makeText(this, "Create Lutemons first", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Move Lutemons to Training Area first", Toast.LENGTH_SHORT).show();
                 return;
             }
 

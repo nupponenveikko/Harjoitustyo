@@ -51,7 +51,7 @@ public class BattleActivity extends AppCompatActivity {
 
         buttonFight.setOnClickListener(v -> {
             if (lutemons.size() < 2) {
-                Toast.makeText(this, "Create at least two Lutemons", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Move at least two Lutemons to Battle Area first", Toast.LENGTH_SHORT).show();
                 return;
             }
 

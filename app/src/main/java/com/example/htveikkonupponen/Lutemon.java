@@ -65,7 +65,7 @@ public abstract class Lutemon {
     }
 
     public String getStats() {
-        return color + " (" + name + ") ATTACK: " + attack +
+        return color + " (" + name + ") ATTACK: " + (attack + experience) +
                 " DEFENCE: " + defense +
                 " EXPERIENCE: " + experience +
                 " HP: " + health + "/" + maxHealth +
