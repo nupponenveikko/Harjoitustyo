@@ -24,7 +24,7 @@ public abstract class Lutemon {
         this.maxHealth = maxHealth;
         this.health = maxHealth;
         this.experience = 0;
-        this.location = "Koti";
+        this.location = "Home";
         this.id = idCounter++;
         this.wins = 0;
         this.battles = 0;

@@ -23,7 +23,8 @@ public class TrainingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
-
+        Button buttonBack = findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(v -> finish());
         spinnerLutemon = findViewById(R.id.spinnerLutemon);
         buttonTrain = findViewById(R.id.buttonTrain);
         textViewTrainingResult = findViewById(R.id.textViewTrainingResult);

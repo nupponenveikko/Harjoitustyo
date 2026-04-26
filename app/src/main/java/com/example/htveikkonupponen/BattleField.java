@@ -15,7 +15,7 @@ public class BattleField {
             result.append(defender.getStats()).append("\n");
 
             result.append(attacker.getName())
-                    .append(" hyökkää ")
+                    .append(" attacks ")
                     .append(defender.getName())
                     .append("\n");
 

@@ -20,7 +20,8 @@ public class MoveLutemonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_move_lutemon);
-
+        Button buttonBack = findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(v -> finish());
         spinnerLutemon = findViewById(R.id.spinnerLutemon);
         spinnerLocation = findViewById(R.id.spinnerLocation);
         buttonMoveLutemon = findViewById(R.id.buttonMoveLutemon);

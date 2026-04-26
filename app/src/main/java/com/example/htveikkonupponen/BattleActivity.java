@@ -23,7 +23,8 @@ public class BattleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battle);
-
+        Button buttonBack = findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(v -> finish());
         spinnerFirst = findViewById(R.id.spinnerFirst);
         spinnerSecond = findViewById(R.id.spinnerSecond);
         buttonFight = findViewById(R.id.buttonFight);

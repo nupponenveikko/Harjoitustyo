@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
+import android.widget.Button;
 import java.util.ArrayList;
 
 public class ListLutemonsActivity extends AppCompatActivity {
@@ -18,7 +18,8 @@ public class ListLutemonsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_lutemons);
-
+        Button buttonBack = findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(v -> finish());
         recyclerViewLutemons = findViewById(R.id.recyclerViewLutemons);
 
         lutemons = Storage.getInstance().getAllLutemons();

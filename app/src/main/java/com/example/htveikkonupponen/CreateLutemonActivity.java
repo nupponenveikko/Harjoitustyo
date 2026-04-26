@@ -19,7 +19,8 @@ public class CreateLutemonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_lutemon);
-
+        Button buttonBack = findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(v -> finish());
         editTextName = findViewById(R.id.editTextName);
         spinnerType = findViewById(R.id.spinnerType);
         buttonCreateLutemon = findViewById(R.id.buttonCreateLutemon);
